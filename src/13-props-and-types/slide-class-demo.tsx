@@ -1,5 +1,5 @@
 import React from 'react';
-import Slide from './slide-function';
+import Slide from './slide-elements-class';
 
 const el = (
     <>
@@ -13,7 +13,7 @@ const el = (
         <Slide heading="What are props" page={{ current: 2, total: 2 }}>
             <ul className="list-unstyled" style={{ marginTop: '1.5em' }}>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Loremm, ipsum dolor sit amet consectetur adipisicing elit. 
                     Fuga facere nostrum neque qui et numquam? Beatae esse doloribus, 
                     aperiam qui vel nisi similique iste a veniam sint facilis error, 
                     molestias modi eligendi laboriosam quibusdam quidem ab odio vitae 

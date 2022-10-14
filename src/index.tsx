@@ -7,6 +7,8 @@ import ReactDOM from 'react-dom';
 // import el from './12-components/components/slide-elements'
 // import el from './12-components/components/slide-elements-class'
 
-import el from './13-props-and-types/slide-function-demo'
+// import el from './13-props-and-types/slide-class-demo'
+
+import el from './13-props-and-types/slide-class-demo'
 
 ReactDOM.render( el, document.getElementById( 'root' ) );

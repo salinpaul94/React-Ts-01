@@ -1,40 +1,44 @@
-import React, { Fragment, Component } from 'react';
-
-import {
-    headingStyle,
-    bodyStyle,
-    textCenter,
-    listUnstyled
-} from './slides.styles';
+import React, { ReactNode } from 'react';
+import PropTypes from 'prop-types';
 
 import './slides.css';
 
-class Slide extends React.Component {
+type Props = {
+    heading: string,
+    page?: {
+        current: number,
+        total: number
+    },
+    children: ReactNode
+};
+
+class Slide extends React.Component<Props> {
+    propTypes = {
+        heading: PropTypes.string.isRequired,
+        page: PropTypes.shape({
+            current: PropTypes.number.isRequired,
+            total: PropTypes.number.isRequired
+        }),
+        children: PropTypes.node.isRequired,
+    };
     render() {
+        const { heading, children, page } = this.props;
+
         const slide = (
-            <div className="slide">
-                <h1 style={{ ...headingStyle, ...textCenter }}>
-                    Styling in React
-                </h1>
+            <div className = "slide" >
+                <span className="slide-number">{page?.current} / {page?.total}</span>
+                <h1 className="heading-text text-center">{heading}</h1>
                 <hr />
-                <div style={bodyStyle}>
-                    <ul style={{ ...listUnstyled, marginTop: '1em' }}>
-                        <li>You can provide style using CSS classes</li>
-                        <li>You can provide inline styles using a JS Object</li>
-                    </ul>
+                <div className="body-text">
+                    {children}
                 </div>
-            </div>
+            </div >
         );
 
         return slide;
     }
 }
 
-const el = (
-    <Fragment>
-        <Slide />
-        <Slide></Slide>
-    </Fragment>
-);
 
-export default el;
+
+export default Slide;
