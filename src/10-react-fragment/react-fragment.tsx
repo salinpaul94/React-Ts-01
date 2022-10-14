@@ -5,4 +5,20 @@ const fruitsEl = (
         <li>Apples</li>
         <li>Oranges</li>
     </Fragment>
-)
+);
+
+const veggiesEl = (
+    <Fragment>
+        <li>Potatos</li>
+        <li>Onions</li>
+    </Fragment>
+);
+
+const shoppingListEl = (
+    <ul>
+        {fruitsEl}
+        {veggiesEl}
+    </ul>
+);
+
+export default shoppingListEl;
