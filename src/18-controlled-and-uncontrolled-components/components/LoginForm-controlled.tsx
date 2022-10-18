@@ -54,6 +54,8 @@ class LoginForm extends Component<Props, State> {
                     {password}
                 </div>
                 <button type="submit">Login</button>
+                <br /><br />    
+                <div>{email}</div>
             </form>
         );
     }
