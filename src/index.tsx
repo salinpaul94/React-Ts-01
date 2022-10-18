@@ -17,6 +17,8 @@ import ReactDOM from 'react-dom';
 
 // import el from './16-conditional-rendering/SlideShow-demo'
 
-import el from './17-events/events-demo'
+// import el from './17-events/events-demo'
+
+import el from './18-controlled-and-uncontrolled-components/LoginForm-controlled-demo'
 
 ReactDOM.render( el, document.getElementById( 'root' ) );
