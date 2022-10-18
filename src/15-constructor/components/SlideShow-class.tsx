@@ -1,33 +1,28 @@
-import React, { cloneElement, Component, ReactElement} from 'react';
+import React, { cloneElement, Component, ReactElement } from 'react';
 
 type Props = {
+    initialActiveSlide: number,
     children: ReactElement[]
 };
 
 type State = {
-    activeSlide: number;
+    activeSlide: number
 }
 
 class SlideShow extends Component<Props, State> {
-    state = {
-        activeSlide: 0
-    };
-    // constructor( props : Props ) {
-    //     super( props );
+    // state = {
+    //     activeSlide: 0
+    // };
 
-    //     this.state = {
-    //         activeSlide: 0
-    //     };
-    // }
+    constructor( props : Props ) {
+        super( props ); // this.props = props;
+        this.state = {
+            activeSlide: this.props.initialActiveSlide
+        };
+    }
 
     previous = () => {
-        console.log( 'Previous' );
-        console.log( this );
-        // this.setState({
-        //     activeSlide: this.state.activeSlide - 1
-        // })
-
-        this.setState( state => {
+        this.setState(state => {
             return {
                 activeSlide: Math.max( state.activeSlide - 1, 0)
             };

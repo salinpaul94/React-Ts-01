@@ -13,6 +13,8 @@ import ReactDOM from 'react-dom';
 
 // import el from './14-State/SlideShow-class-demo'
 
-import el from './14-State/SlideShow-function-demo'
+// import el from './14-State/SlideShow-function-demo'
+
+import el from './15-constructor/SlideShow-class-demo'
 
 ReactDOM.render( el, document.getElementById( 'root' ) );

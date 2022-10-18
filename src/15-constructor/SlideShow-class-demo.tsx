@@ -2,10 +2,10 @@ import React from 'react';
 import SlideShow from './components/SlideShow-class';
 import Slide from './components/Slide-class';
 
-import './SlideShow-demo.css';
+import './components/SlideShow-class';
 
 export default (
-    <SlideShow>
+    <SlideShow initialActiveSlide={1}>
         <Slide heading="Styling in React">
             <ul style={ { marginTop: '1em' } }>
                 <li>You can provide style using CSS classes</li>
