@@ -19,6 +19,8 @@ import ReactDOM from 'react-dom';
 
 // import el from './17-events/events-demo'
 
-import el from './18-controlled-and-uncontrolled-components/LoginForm-controlled-demo'
+// import el from './18-controlled-and-uncontrolled-components/LoginForm-controlled-demo';
+
+import el from './19-list-map-keys/SlideDeck-demo';
 
 ReactDOM.render( el, document.getElementById( 'root' ) );
