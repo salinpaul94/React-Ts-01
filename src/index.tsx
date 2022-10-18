@@ -15,6 +15,8 @@ import ReactDOM from 'react-dom';
 
 // import el from './14-State/SlideShow-function-demo'
 
-import el from './16-conditional-rendering/SlideShow-demo'
+// import el from './16-conditional-rendering/SlideShow-demo'
+
+import el from './17-events/events-demo'
 
 ReactDOM.render( el, document.getElementById( 'root' ) );

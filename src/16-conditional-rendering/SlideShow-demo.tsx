@@ -17,7 +17,7 @@ export default (
                 Props are used to pass data to a component instance, in order to customize the UI. The children are also treated as a prop.
             </p>
         </Slide>
-        <Slide heading="Component State" showDivider={true} showTotal>
+        <Slide heading="Component State" showDivider={false} showTotal={false}>
             <p>
                 State is used by a component to maintain data, related to the component itself, that changes with time.
             </p>

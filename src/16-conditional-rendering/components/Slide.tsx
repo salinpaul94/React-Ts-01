@@ -47,6 +47,7 @@ class Slide extends React.Component<Props> {
                     )
                 }
                 <h1 className="heading-text text-center">{heading}</h1>
+                <hr />
                 {showDivider && <hr />}
                 <div className="body-text">{children}</div>
             </div>
