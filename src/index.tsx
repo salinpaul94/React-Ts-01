@@ -1,28 +1,19 @@
-// import React from 'react';
-import ReactDOM from 'react-dom';
-// import el from  './04-react-css/slide';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-// import el from './10-react-fragment/react-fragment'
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
-// import el from './12-components/components/slide-elements'
-// import el from './12-components/components/slide-elements-class'
-
-// import el from './13-props-and-types/slide-class-demo'
-
-// import el from './13-props-and-types/slide-class-demo'
-
-// import el from './14-State/SlideShow-class-demo'
-
-// import el from './14-State/SlideShow-function-demo'
-
-// import el from './16-conditional-rendering/SlideShow-demo'
-
-// import el from './17-events/events-demo'
-
-// import el from './18-controlled-and-uncontrolled-components/LoginForm-controlled-demo';
-
-// import el from './19-list-map-keys/SlideDeck-demo';
-
-import el from './20-refs/RefComponent-function-demo'
-
-ReactDOM.render( el, document.getElementById( 'root' ) );
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
