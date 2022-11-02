@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom';
 
-import el from "./07-props-and-types/Slide-class-demo"
+import el from "./08-state/SlideShow-function-demo";
 
 ReactDOM.render( el, document.getElementById('root'));
