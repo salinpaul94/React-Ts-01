@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom';
 
-import el from "./12-controlled-and-uncontrolled-components/LoginForm-controlled-demo"
+import el from "./13-list-map-keys/SlideDeck-demo"
 
 ReactDOM.render( el, document.getElementById('root'));
